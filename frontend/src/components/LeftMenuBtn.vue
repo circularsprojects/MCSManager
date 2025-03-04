@@ -20,8 +20,8 @@ defineProps<{
 
 <style lang="scss" scoped>
 .isActive {
-  background-color: rgba(168, 168, 168, 0.143);
-  color: var(--color-blue-5) !important;
+  background-color: #45475a;
+  color: #89b4fa !important;
 }
 .btn {
   display: flex;
@@ -33,7 +33,7 @@ defineProps<{
   min-width: 40px;
   cursor: pointer;
   border-radius: 6px;
-  transition: all 0.6s;
+  transition: all 0.2s;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -42,12 +42,12 @@ defineProps<{
   .text {
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--color-gray-9);
+    color: #cdd6f4;
   }
 
   &:hover {
     // background-color: var(--color-gray-5);
-    background-color: rgba(168, 168, 168, 0.208);
+    background-color: #585b70;
   }
 }
 </style>
