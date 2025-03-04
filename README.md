@@ -30,6 +30,8 @@
 This fork of MCSManager is my personal fork with random changes n stuff for my
 own instance
 
+also worth nothing this shit does NOT support light mode!!! its broken as hell!!! and im never fixing it. this is just dark mode catppuccin now.
+
 ## What is MCSManager?
 
 **MCSManager Panel** (MCSM) is a **modern, secure, and distributed control
