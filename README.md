@@ -1,11 +1,11 @@
 <div align="center">
   <a href="https://mcsmanager.com/" target="_blank">
-    <img src="https://public-link.oss-cn-shenzhen.aliyuncs.com/mcsm_picture/logo.png" alt="MCSManagerLogo.png" width="510px" />    
+    <img src="https://public-link.oss-cn-shenzhen.aliyuncs.com/mcsm_picture/logo.png" alt="MCSManagerLogo.png" width="510px" />
   </a>
 
-  <br />
-  
-  <h1 id="mcsmanager">
+<br />
+
+<h1 id="mcsmanager">
     <a href="https://mcsmanager.com/" target="_blank">MCSManager Panel</a>
   </h1>
 
@@ -14,22 +14,38 @@
 [![Status](https://img.shields.io/badge/node-v16.20.2-blue.svg)](https://nodejs.org/en/download/)
 [![Status](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://github.com/MCSManager)
 
-[Official Website](http://mcsmanager.com/) | [Docs](https://docs.mcsmanager.com/) | [Discord](https://discord.gg/BNpYMVX7Cd)
+[Official Website](http://mcsmanager.com/) |
+[Docs](https://docs.mcsmanager.com/) | [Discord](https://discord.gg/BNpYMVX7Cd)
 
-[简体中文](README_ZH.md) | [繁體中文](README_TW.md) | [Deutsch](README_DE.md) | [Português BR](README_PTBR.md) |
-[日本語](README_JP.md) | [Spanish](README_ES.md)
+[简体中文](README_ZH.md) | [繁體中文](README_TW.md) | [Deutsch](README_DE.md) |
+[Português BR](README_PTBR.md) | [日本語](README_JP.md) |
+[Spanish](README_ES.md)
 
 </div>
 
 <br />
 
+## This fork
+
+This fork of MCSManager is my personal fork with random changes n stuff for my
+own instance
+
 ## What is MCSManager?
 
-**MCSManager Panel** (MCSM) is a **modern, secure, and distributed control panel** designed for managing Minecraft and Steam game servers.
+**MCSManager Panel** (MCSM) is a **modern, secure, and distributed control
+panel** designed for managing Minecraft and Steam game servers.
 
-MCSManager has already gained a certain level of popularity within the community, specifically because of Minecraft. MCSManager excels in offering a centralized management solution for multiple server instances and provides a secure and reliable multi-user permission system. In addition, we are committed to support server administrators, not only for Minecraft but also for Terraria and various Steam games. Our goal is to foster a thriving and supportive community for game server management.
+MCSManager has already gained a certain level of popularity within the
+community, specifically because of Minecraft. MCSManager excels in offering a
+centralized management solution for multiple server instances and provides a
+secure and reliable multi-user permission system. In addition, we are committed
+to support server administrators, not only for Minecraft but also for Terraria
+and various Steam games. Our goal is to foster a thriving and supportive
+community for game server management.
 
-MCSManager **supports English, French, German, Italian, Japanese, Portuguese, Simplified Chinese, and Traditional Chinese**, with plans to add support for more languages in the future!
+MCSManager **supports English, French, German, Italian, Japanese, Portuguese,
+Simplified Chinese, and Traditional Chinese**, with plans to add support for
+more languages in the future!
 
 **Terminal**
 
@@ -46,18 +62,22 @@ MCSManager **supports English, French, German, Italian, Japanese, Portuguese, Si
 ## Features
 
 1. One-click deployment of `Minecraft` Java/Bedrock Server
-2. Compatible with most `Steam` game servers. (e.g. `Palworld`, `Squad`, `Project Zomboid`, `Terraria`, etc.)
+2. Compatible with most `Steam` game servers. (e.g. `Palworld`, `Squad`,
+   `Project Zomboid`, `Terraria`, etc.)
 3. Customizable UI, create your own layout
-4. Supports all images on `Docker Hub`, supports multiple users and supports commercial services!
+4. Supports all images on `Docker Hub`, supports multiple users and supports
+   commercial services!
 5. Manage multiple servers with a single web interface
-6. The technology stack is simple, and you only need to be good at Typescript to complete the entire MCSManager development.
+6. The technology stack is simple, and you only need to be good at Typescript to
+   complete the entire MCSManager development.
 7. And More!
 
 <br />
 
 ## Runtime Environment
 
-MCSM supports both `Windows` and `Linux`. The only requirement is `Node.js` and some libraries **for decompression**.
+MCSM supports both `Windows` and `Linux`. The only requirement is `Node.js` and
+some libraries **for decompression**.
 
 Requires [Node.js 16.20.2](https://nodejs.org/en) or above.
 
@@ -77,7 +97,8 @@ Go to: [https://mcsmanager.com/](https://mcsmanager.com/)
 
 **One-Command Deployment**
 
-> The script needs to register system services and requires root permissions because of that.
+> The script needs to register system services and requires root permissions
+> because of that.
 
 ```bash
 sudo su -c "wget -qO- https://script.mcsmanager.com/setup.sh | bash"
@@ -97,7 +118,8 @@ systemctl stop mcsm-{web,daemon}
 
 **Linux Manual Installation**
 
-- If the installation script fails to execute correctly, you can try to install it manually.
+- If the installation script fails to execute correctly, you can try to install
+  it manually.
 
 ```bash
 # Create /opt directory if not already
@@ -135,13 +157,17 @@ tar -zxf mcsmanager_linux_release.tar.gz
 # In general, the web interface will automatically scan and add the local daemon.
 ```
 
-This installation approach does not automatically set up MCSManager as a system service. Therefore, it is necessary to use `screen` for management. For those interested in managing MCSManager through a system service, please refer to our wiki/documentation.
+This installation approach does not automatically set up MCSManager as a system
+service. Therefore, it is necessary to use `screen` for management. For those
+interested in managing MCSManager through a system service, please refer to our
+wiki/documentation.
 
 <br />
 
 ## Development
 
-This section is specifically designed for developers. General users may disregard this portion without concern.
+This section is specifically designed for developers. General users may
+disregard this portion without concern.
 
 ### Plugins
 
@@ -170,7 +196,11 @@ git clone https://github.com/MCSManager/MCSManager.git
 
 ### Dependency Files
 
-You'll need to go to the [PTY](https://github.com/MCSManager/PTY) and [Zip-Tools](https://github.com/MCSManager/Zip-Tools) projects to download the corresponding binary files and place them in the `daemon/lib` directory to ensure the proper functioning of the `Emulation Terminal` and `File Decompression`.
+You'll need to go to the [PTY](https://github.com/MCSManager/PTY) and
+[Zip-Tools](https://github.com/MCSManager/Zip-Tools) projects to download the
+corresponding binary files and place them in the `daemon/lib` directory to
+ensure the proper functioning of the `Emulation Terminal` and
+`File Decompression`.
 
 ### Build Production Version
 
@@ -185,9 +215,14 @@ Output Directory: "production-code"
 
 ## Code Contributing
 
-If you experience any problems while using MCSManager, you are welcome to [submit an Issue](https://github.com/MCSManager/MCSManager/issues/new/choose). Alternatively, you can fork the project and contribute directly by submitting a Pull Request.
+If you experience any problems while using MCSManager, you are welcome to
+[submit an Issue](https://github.com/MCSManager/MCSManager/issues/new/choose).
+Alternatively, you can fork the project and contribute directly by submitting a
+Pull Request.
 
-Please ensure that any submitted code adheres to our existing coding style. For more details, refer to the guidelines provided in [this issue](https://github.com/MCSManager/MCSManager/issues/544).
+Please ensure that any submitted code adheres to our existing coding style. For
+more details, refer to the guidelines provided in
+[this issue](https://github.com/MCSManager/MCSManager/issues/544).
 
 <br />
 
@@ -200,7 +235,8 @@ Please ensure that any submitted code adheres to our existing coding style. For 
 
 ## BUG Reporting
 
-**Open Issue:** [Click here](https://github.com/MCSManager/MCSManager/issues/new/choose)
+**Open Issue:**
+[Click here](https://github.com/MCSManager/MCSManager/issues/new/choose)
 
 **Security Vulnerability Report:** [SECURITY.md](SECURITY.md)
 
@@ -219,6 +255,7 @@ Thanks to these contributors for providing a substantial amount of translation:
 
 ## License
 
-The source code of MCSManager is licensed under the [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) License.
+The source code of MCSManager is licensed under the
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) License.
 
 Copyright ©2025 MCSManager.
