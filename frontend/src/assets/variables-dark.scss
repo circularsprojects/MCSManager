@@ -1,10 +1,10 @@
 .app-dark-theme {
   @extend .app-dark-base-color;
 
-  --vscode-bg-color: rgb(32, 32, 32);
+  --vscode-bg-color: #313244;
   --blue-background-color: rgb(35, 36, 41);
 
-  --background-color: var(--blue-background-color);
+  --background-color: #1e1e2e;
   --background-color-white: var(--vscode-bg-color);
 
   --drag-background-color: var(--color-gray-10);
@@ -18,7 +18,7 @@
   --app-header-bg: rgba(30, 30, 30, 0.6);
   --app-header-text-color: var(--color-gray-9);
 
-  --text-color: var(--color-gray-8);
+  --text-color: #cdd6f4;
 
   --card-border-color: rgba(196, 196, 196, 0.257);
   --card-shadow-color: rgba(0, 0, 0, 0.135);
@@ -171,22 +171,22 @@
   --color-magenta-10: #fad2e3;
 
   --color-gray-13: #ffffff;
-  --color-gray-12: #fafafa;
-  --color-gray-11: #f5f5f5;
-  --color-gray-10: #f0f0f0;
-  --color-gray-9: #d9d9d9;
-  --color-gray-8: #bfbfbf;
-  --color-gray-7: #8c8c8c;
-  --color-gray-6: #595959;
-  --color-gray-5: #434343;
-  --color-gray-4: #262626;
-  --color-gray-3: #1f1f1f;
-  --color-gray-2: #141414;
+  --color-gray-12: #cdd6f4;
+  --color-gray-11: #bac2de;
+  --color-gray-10: #a6adc8;
+  --color-gray-9: #9399b2;
+  --color-gray-8: #7f849c;
+  --color-gray-7: #6c7086;
+  --color-gray-6: #585b70;
+  --color-gray-5: #45475a;
+  --color-gray-4: #313244;
+  --color-gray-3: #1e1e2e;
+  --color-gray-2: #181825;
   --color-gray-1: #000000;
 
-  --color-primary: var(--color-blue-5);
-  --color-danger: var(--color-red-5);
-  --color-warning: var(--color-yellow-6);
-  --color-success: var(--color-green-5);
-  --color-info: var(--color-gray-7);
+  --color-primary: #b4befe;
+  --color-danger: #f38ba8;
+  --color-warning: #f9e2af;
+  --color-success: #a6e3a1;
+  --color-info: #89b4fa;
 }

@@ -319,7 +319,7 @@ onMounted(async () => {
     height: 100%;
     background-color: #1e1e1e;
     padding: 8px;
-    border-radius: 6px;
+    border-radius: 16px;
     overflow: hidden;
     display: flex;
     flex-direction: column;

@@ -24,7 +24,7 @@ if (getCurrentLanguage().toLowerCase() === "zh_cn") {
 }
 
 const isDarkUI = isDarkTheme();
-const appTheme = {
+var appTheme = {
   algorithm: theme.defaultAlgorithm,
   token: {
     fontSizeLG: 14,
@@ -33,13 +33,41 @@ const appTheme = {
   }
 };
 
+const catppuccinTheme = {
+  algorithm: theme.darkAlgorithm,
+  token: {
+    borderRadius: 16,
+    colorBgBase: "#1e1e2e",
+    colorPrimary: "#b4befe",
+    colorError: "#f38ba8",
+    colorInfo: "#89b4fa",
+    colorSuccess: "#a6e3a1",
+    colorWarning: "#f9e2af",
+    colorTextBase: "#cdd6f4",
+
+    colorBgContainer: "#1e1e2e",
+    colorBorder: "#585b70",
+    colorBorderSecondary: "#6c7086",
+    borderRadiusLG: 16,
+    borderRadiusSM: 8,
+    borderRadiusXS: 8,
+
+    button: {
+      colorBgContainer: "",
+      primaryShadow: "none",
+      defaultShadow: "none",
+      dangerShadow: "none",
+    },
+  }
+}
+
 if (isDarkUI) {
-  appTheme.algorithm = theme.darkAlgorithm;
+  appTheme = catppuccinTheme;
 }
 </script>
 
 <template>
-  <ConfigProvider :theme="appTheme" :locale="locale">
+  <ConfigProvider :theme="catppuccinTheme" :locale="locale">
     <slot></slot>
   </ConfigProvider>
 </template>

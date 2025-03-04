@@ -74,9 +74,9 @@ onMounted(() => {
     float: left;
     width: 240px;
     padding: 12px 16px;
-    background-color: var(--color-gray-4);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    background-color: #313244;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
   }
   .right-content {
     overflow: hidden;
